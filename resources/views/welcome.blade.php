@@ -90,6 +90,7 @@
             {!! Form::open(array('route' => 'hisoka_stapler', 'method' => 'POST', 'files' => true)) !!}
             {!! Form::input('name_','name') !!} <br/>
             {!! Form::input('email_','email') !!} <br/>
+            {!! Form::input('password_','password') !!} <br/>
             {!! Form::file('cv') !!} <br/>
             {!! Form::submit('save') !!} <br/>
             {!! Form::close() !!}

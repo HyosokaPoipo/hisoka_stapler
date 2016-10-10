@@ -18,7 +18,7 @@ class User extends Authenticatable implements StaplerableInterface
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'cv'
     ];
 
     /**
@@ -29,4 +29,18 @@ class User extends Authenticatable implements StaplerableInterface
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+
+    public function __construct(array $attributes = array())
+    {
+        $this->hasAttachedFile('cv', [
+            // 'styles' => [
+            //     'medium' => '300x300',
+            //     'thumb' => '100x100'
+            // ]
+        ]);
+
+        parent::__construct($attributes);
+    }
 }
