@@ -87,9 +87,9 @@
                 </div>
             </div>
 
-            {!! Form::open(['url' => action('UserController@store'), 'method' => 'POST', 'files' => true]) !!}
-            {!! Form::input('first_name') !!}
-            {!! Form::input('last_name') !!}
+            {!! Form::open(array('route' => 'hisoka_stapler', 'method' => 'POST', 'files' => true)) !!}
+            {!! Form::input('first_name','test_first') !!}
+            {!! Form::input('last_name','test_last') !!}
             {!! Form::file('avatar') !!}
             {!! Form::submit('save') !!}
             {!! Form::close() !!}

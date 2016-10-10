@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('test_stapler',[
+Route::post('/test_stapler',[
     'as'   => 'hisoka_stapler',
     'uses' => 'UserController@store'
     ]);
