@@ -63,17 +63,33 @@ return [
         ],
 
         's3_client_config' => [
-        'key' => env('S3_KEY'),
-        'secret' => env('S3_SECRET'),
-        'region' => env('S3_REGION'),
-        'bucket' => env('S3_BUCKET'),
-        'scheme' => 'http',
+            'key'    => env('S3_KEY'),
+            'secret' => env('S3_SECRET'),
+            'region' => env('S3_REGION'),
+            'scheme' => 'http',
         ],
 
         's3_object_config' => [
-        'Bucket' => env('S3_BUCKET'),
-        'ACL' => 'public-read',
+            'Bucket' => env('S3_BUCKET'),
+            'ACL'    => 'public-read',
          ],
+
+
+        's3TransIn' => [
+            'driver' => 's3',
+            'key'    => env('S3_KEY'),
+            'secret' => env('S3_SECRET'),
+            'region' => env('S3_TRANS_REGION'),
+            'bucket' => env('S3_IN_BUCKET'),
+        ],
+
+        's3TransOut' => [
+            'driver' => 's3',
+            'key'    => env('S3_KEY'),
+            'secret' => env('S3_SECRET'),
+            'region' => env('S3_TRANS_REGION'),
+            'bucket' => env('S3_OUT_BUCKET'),
+        ],
     ]
 
 ];
