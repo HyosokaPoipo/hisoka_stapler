@@ -39,6 +39,7 @@ class User extends Authenticatable implements StaplerableInterface
             //     'medium' => '300x300',
             //     'thumb' => '100x100'
             // ]
+            'storage' => 's3'
         ]);
 
         parent::__construct($attributes);

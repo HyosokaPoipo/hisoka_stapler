@@ -75,21 +75,21 @@ return [
          ],
 
 
-        's3TransIn' => [
-            'driver' => 's3',
-            'key'    => env('S3_KEY'),
-            'secret' => env('S3_SECRET'),
-            'region' => env('S3_TRANS_REGION'),
-            'bucket' => env('S3_IN_BUCKET'),
-        ],
+        // 's3TransIn' => [
+        //     'driver' => 's3',
+        //     'key'    => env('S3_KEY'),
+        //     'secret' => env('S3_SECRET'),
+        //     'region' => env('S3_TRANS_REGION'),
+        //     'bucket' => env('S3_IN_BUCKET'),
+        // ],
 
-        's3TransOut' => [
-            'driver' => 's3',
-            'key'    => env('S3_KEY'),
-            'secret' => env('S3_SECRET'),
-            'region' => env('S3_TRANS_REGION'),
-            'bucket' => env('S3_OUT_BUCKET'),
-        ],
+        // 's3TransOut' => [
+        //     'driver' => 's3',
+        //     'key'    => env('S3_KEY'),
+        //     'secret' => env('S3_SECRET'),
+        //     'region' => env('S3_TRANS_REGION'),
+        //     'bucket' => env('S3_OUT_BUCKET'),
+        // ],
     ]
 
 ];

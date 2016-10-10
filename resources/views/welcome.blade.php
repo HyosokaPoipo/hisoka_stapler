@@ -94,7 +94,7 @@
             {!! Form::file('cv') !!} <br/>
             {!! Form::submit('save') !!} <br/>
             {!! Form::close() !!}
-
+            <input name="_method" type="hidden" value="PATCH">
         </div>
     </body>
 </html>
