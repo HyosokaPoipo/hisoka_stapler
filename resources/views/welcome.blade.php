@@ -88,10 +88,10 @@
             </div>
 
             {!! Form::open(array('route' => 'hisoka_stapler', 'method' => 'POST', 'files' => true)) !!}
-            {!! Form::input('first_name','test_first') !!}
-            {!! Form::input('last_name','test_last') !!}
-            {!! Form::file('avatar') !!}
-            {!! Form::submit('save') !!}
+            {!! Form::input('name_','name') !!} <br/>
+            {!! Form::input('email_','email') !!} <br/>
+            {!! Form::file('cv') !!} <br/>
+            {!! Form::submit('save') !!} <br/>
             {!! Form::close() !!}
 
         </div>
