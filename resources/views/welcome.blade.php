@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            {!! Form::open(['url' => action('UsersController@store'), 'method' => 'POST', 'files' => true]) !!}
+            {!! Form::open(['url' => action('UserController@store'), 'method' => 'POST', 'files' => true]) !!}
             {!! Form::input('first_name') !!}
             {!! Form::input('last_name') !!}
             {!! Form::file('avatar') !!}

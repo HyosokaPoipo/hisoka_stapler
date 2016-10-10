@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('test_stapler',[
+    'as'   => 'hisoka_stapler',
+    'uses' => 'UserController@store'
+    ]);
