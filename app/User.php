@@ -5,9 +5,12 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+use Codesleeve\Stapler\ORM\StaplerableInterface;
+use Codesleeve\Stapler\ORM\EloquentTrait;
+
+class User extends Authenticatable implements StaplerableInterface
 {
-    use Notifiable;
+    use Notifiable, EloquentTrait;
 
     /**
      * The attributes that are mass assignable.
