@@ -86,6 +86,14 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+
+            {!! Form::open(['url' => action('UsersController@store'), 'method' => 'POST', 'files' => true]) !!}
+            {!! Form::input('first_name') !!}
+            {!! Form::input('last_name') !!}
+            {!! Form::file('avatar') !!}
+            {!! Form::submit('save') !!}
+            {!! Form::close() !!}
+
         </div>
     </body>
 </html>
