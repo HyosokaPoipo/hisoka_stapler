@@ -63,13 +63,16 @@ return [
         ],
 
         's3_client_config' => [
-            'driver' => 's3',
-            'key'    => env('S3_KEY'),
-            'secret' => env('S3_SECRET'),
-            'region' => env('S3_REGION'),
-            'bucket' => env('S3_BUCKET'),
+        'key' => env('S3_KEY'),
+        'secret' => env('S3_SECRET'),
+        'region' => env('S3_REGION'),
+        'scheme' => 'http',
         ],
 
-    ],
+        's3_object_config' => [
+        'Bucket' => env('S3_BUCKET'),
+        'ACL' => 'public-read',
+         ],
+    ]
 
 ];
