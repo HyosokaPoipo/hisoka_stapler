@@ -35,10 +35,7 @@ class User extends Authenticatable implements StaplerableInterface
     public function __construct(array $attributes = array())
     {
         $this->hasAttachedFile('cv', [
-            // 'styles' => [
-            //     'medium' => '300x300',
-            //     'thumb' => '100x100'
-            // ]
+            'storage' => 's3'
             'storage' => 's3'
         ]);
 
