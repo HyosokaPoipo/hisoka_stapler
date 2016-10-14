@@ -36,7 +36,6 @@ class User extends Authenticatable implements StaplerableInterface
     {
         $this->hasAttachedFile('cv', [
             'storage' => 's3'
-            'storage' => 's3'
         ]);
 
         parent::__construct($attributes);
